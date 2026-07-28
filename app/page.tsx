@@ -31,7 +31,9 @@ export default function Home() {
         </p>
 
 
-        <button className="
+        <a
+          href="/games"
+          className="
           mt-10
           bg-white
           text-black
@@ -42,7 +44,7 @@ export default function Home() {
           hover:bg-gray-200
         ">
           Explore Games
-        </button>
+        </a>
 
       </section>
 
@@ -62,10 +64,15 @@ export default function Home() {
           gap-8
         ">
 
-          <div className="
+          <a
+            href="/games/2048"
+            className="
             bg-zinc-900
             rounded-2xl
             p-8
+            block
+            hover:bg-zinc-800
+            transition-colors
           ">
 
             <div className="
@@ -91,7 +98,7 @@ export default function Home() {
               for modern players.
             </p>
 
-          </div>
+          </a>
 
 
           <div className="
@@ -190,8 +197,15 @@ export default function Home() {
         </p>
 
         <div className="mt-3 space-x-5">
-          <a>Privacy Policy</a>
-          <a>Terms of Service</a>
+          <a href="/privacy" className="hover:text-gray-300 transition-colors">
+            Privacy Policy
+          </a>
+          <a
+            href="/terms-of-service"
+            className="hover:text-gray-300 transition-colors"
+          >
+            Terms of Service
+          </a>
         </div>
 
       </footer>
