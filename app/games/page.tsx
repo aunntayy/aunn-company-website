@@ -7,7 +7,15 @@ export default function GamesPage() {
       </div>
 
       <section className="relative mx-auto max-w-6xl px-6 py-16 md:px-10">
-        <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Aunn D Tayy</p>
+        <div className="flex items-start justify-between gap-4">
+          <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Aunn D Tayy</p>
+          <a
+            href="/"
+            className="rounded-full border border-zinc-700 px-4 py-2 text-sm text-zinc-200 transition hover:border-zinc-500 hover:text-white"
+          >
+            Back to Home
+          </a>
+        </div>
         <h1 className="mt-4 text-4xl font-black md:text-6xl">Game Library</h1>
         <p className="mt-4 max-w-2xl text-zinc-300">
           Play our currently available titles and check back for new releases.
