@@ -1,65 +1,201 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen bg-black text-white">
+
+      {/* Navbar */}
+      <nav className="flex justify-between items-center px-8 py-6">
+        <h1 className="text-2xl font-bold">
+          AUNN D TAYY
+        </h1>
+
+        <div className="space-x-6 text-gray-300">
+          <a href="#games">Games</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </nav>
+
+
+      {/* Hero */}
+      <section className="text-center py-32 px-6">
+
+        <h2 className="text-5xl md:text-7xl font-bold">
+          Creating Games
+          <br />
+          Everyone Can Enjoy
+        </h2>
+
+        <p className="mt-6 text-xl text-gray-400">
+          Aunn D Tayy LLC builds simple,
+          fun, and addictive experiences.
+        </p>
+
+
+        <button className="
+          mt-10
+          bg-white
+          text-black
+          px-8
+          py-3
+          rounded-full
+          font-semibold
+          hover:bg-gray-200
+        ">
+          Explore Games
+        </button>
+
+      </section>
+
+
+
+      {/* Games */}
+      <section id="games" className="px-8 py-20">
+
+        <h2 className="text-4xl font-bold mb-10">
+          Featured Games
+        </h2>
+
+
+        <div className="
+          grid
+          md:grid-cols-3
+          gap-8
+        ">
+
+          <div className="
+            bg-zinc-900
+            rounded-2xl
+            p-8
+          ">
+
+            <div className="
+              h-40
+              bg-orange-500
+              rounded-xl
+              flex
+              items-center
+              justify-center
+              text-5xl
+              font-bold
+            ">
+              2048
+            </div>
+
+
+            <h3 className="text-2xl mt-5 font-bold">
+              2048
+            </h3>
+
+            <p className="text-gray-400 mt-2">
+              Classic puzzle game redesigned
+              for modern players.
+            </p>
+
+          </div>
+
+
+          <div className="
+            bg-zinc-900
+            rounded-2xl
+            p-8
+          ">
+
+            <div className="
+              h-40
+              bg-zinc-700
+              rounded-xl
+              flex
+              items-center
+              justify-center
+              text-xl
+            ">
+              Coming Soon
+            </div>
+
+
+            <h3 className="text-2xl mt-5 font-bold">
+              Future Games
+            </h3>
+
+            <p className="text-gray-400 mt-2">
+              More experiences are being created.
+            </p>
+
+          </div>
+
         </div>
-      </main>
+
+      </section>
+
+
+
+
+      {/* About */}
+      <section id="about" className="px-8 py-20 text-center">
+
+        <h2 className="text-4xl font-bold">
+          About Aunn D Tayy
+        </h2>
+
+        <p className="
+          max-w-3xl
+          mx-auto
+          mt-6
+          text-gray-400
+          text-lg
+        ">
+          Aunn D Tayy LLC is an independent
+          game studio focused on creating
+          accessible and enjoyable games
+          for players around the world.
+        </p>
+
+      </section>
+
+
+
+
+      {/* Contact */}
+      <section id="contact" className="
+        px-8
+        py-20
+        text-center
+      ">
+
+        <h2 className="text-4xl font-bold">
+          Contact
+        </h2>
+
+        <p className="mt-4 text-gray-400">
+          aunndtayyllc@gmail.com
+        </p>
+
+      </section>
+
+
+
+
+      {/* Footer */}
+      <footer className="
+        border-t
+        border-zinc-800
+        py-8
+        text-center
+        text-gray-500
+      ">
+
+        <p>
+          © 2026 Aunn D Tayy LLC.
+          All rights reserved.
+        </p>
+
+        <div className="mt-3 space-x-5">
+          <a>Privacy Policy</a>
+          <a>Terms of Service</a>
+        </div>
+
+      </footer>
+
     </div>
   );
 }
