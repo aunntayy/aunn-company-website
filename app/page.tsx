@@ -28,13 +28,15 @@ export default function Home() {
         <p className="mt-6 text-xl text-gray-400">
           Aunn D Tayy LLC builds simple,
           fun, and addictive experiences.
+          
         </p>
 
 
         <a
           href="/games"
           className="
-          mt-10
+          inline-block
+          mt-14
           bg-white
           text-black
           px-8
