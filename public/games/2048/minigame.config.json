@@ -1,0 +1,7 @@
+{
+  "_comment": "orientation is the orientation of the game. It can be either 'VERTICAL' or 'HORIZONTAL'.our game default is VERTICAL; minigame.config.json dev is a configuration file for minigame development. You can use it to configure the minigame.",
+  "orientation": "VERTICAL",
+  "dev": {
+    "port": 9527
+  }
+}
